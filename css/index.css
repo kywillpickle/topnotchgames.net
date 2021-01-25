@@ -46,7 +46,7 @@ header h1 {
 }
 header h2 {
     color: black;
-    font-size: medium;
+    font-size: small;
     text-align: center;
     padding: 0px;
     margin-top: 0px;
@@ -67,8 +67,8 @@ nav div div {
     font-size: x-small;
 }
 nav div div h1 {
-    margin-top: 3.2%;
-    margin-bottom: 1%;
+    margin-top: 10px;
+
 }
 nav .colL {
     float: left;
@@ -126,49 +126,72 @@ section .colL p{
 section .img img {
     box-shadow: 0.5px 0.5px 3px #2c2c2c;
 }
+section#Portfolio{
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+}
+section h1 {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 section#Portfolio .colL {
-    float: left;
-    padding-top: 50px;
+    display: grid;
+    align-content: center;
+    grid-row: 2;
+    grid-column: 1;
     padding-left: 6%;
     padding-right: 2%;
-    width: 28%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 }
 section#Portfolio .colR {
-    float: right;
-    padding-top: 50px;
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 30px;
     padding-left: 2%;
     padding-right: 2%;
-    width: 60%;
-    padding-bottom: 55px;
+    padding-bottom: 3%;
 }
 section#Portfolio .img {
     float: left;
-    width: 25%;
+}
+section#Active_Projects {
+    display: grid;
 }
 section#Active_Projects .colL {
-    float: left;
-    padding-top: 100px;
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 30px;
     padding-left: 2%;
     padding-right: 2%;
-    width: 60%;
-    padding-bottom: 100px;
+    padding-bottom: 3%;
 }
 section#Active_Projects .colR {
-    float: right;
-    padding-top: 10px;
+    display: grid;
+    align-content: center;
+    grid-row: 2;
+    grid-column: 3;
     padding-left: 2%;
     padding-right: 6%;
-    padding-bottom: 2%;
-    width: 28%;
+    padding-bottom: 3%;
 }
 section#Active_Projects .img {
     float: left;
-    width: 50%;
 }
 section#Contact {
-    margin-left: 15%;
-    margin-right:15%;
-    width: 70%;
+    display: grid;
     margin-bottom: 20px;
+}
+section#Contact h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
