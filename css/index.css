@@ -64,10 +64,10 @@ nav {
     text-align: center;
 }
 nav div div {
-    font-size: small;
+    font-size: x-small;
 }
 nav div div h1 {
-    margin-top: 2.5%;
+    margin-top: 3.2%;
     margin-bottom: 1%;
 }
 nav .colL {
@@ -132,6 +132,7 @@ section#Portfolio .colL {
     padding-left: 6%;
     padding-right: 2%;
     width: 28%;
+    padding-bottom: 2%;
 }
 section#Portfolio .colR {
     float: right;
@@ -158,6 +159,7 @@ section#Active_Projects .colR {
     padding-top: 10px;
     padding-left: 2%;
     padding-right: 6%;
+    padding-bottom: 2%;
     width: 28%;
 }
 section#Active_Projects .img {
@@ -165,8 +167,8 @@ section#Active_Projects .img {
     width: 50%;
 }
 section#Contact {
-    margin-left: 25%;
-    margin-right:25%;
-    width: 50%;
+    margin-left: 15%;
+    margin-right:15%;
+    width: 70%;
     margin-bottom: 20px;
 }
