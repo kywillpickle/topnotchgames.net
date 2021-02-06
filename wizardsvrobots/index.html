@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>TNG | Wizards vs Robots Demo</title>
+    <link rel="icon" href="/media/tbmlogoShdNoBkg.png">
+    <meta property="og:title" content="TNG | Wizards vs Robots Demo"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.topnotchgames.net/wizardsvrobots"/>
+    <meta property="og:image" content="https://www.topnotchgames.net/media/WvRtestStill.png"/>
+    <meta property="og:description" content="An HTML version of the Unity game I'm making: Wizards Versus Robots"/>
+    <meta name="author" content="Kyle Pickle"/>
+    <meta name="keywords" content="Kyle Pickle, Top Notch Games, TopNotch Games, Wizards Versus Robots, Wizards vs Robots, Wizards v Robots"/>
+    <meta name="theme-color" content="#FFFF00"/>
+    <meta name="twitter:title" content="TNG | Wizards vs Robots Demo">
+    <meta name="twitter:description" content="TAn HTML version of the Unity game I'm making: Wizards Versus Robots">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://www.topnotchgames.net/media/WvRtestStill.png"/>
+    <link rel="shortcut icon" href="/media/tbmlogoShdNoBkg.png">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Wizards v Robots.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+      <header>
+          <h1>
+              TOP NOTCH GAMES
+          </h1>
+          <h2>
+              a college portfolio by Kyle Pickle
+          </h2>
+          <a href="/"><img class="logoimg" src="/media/tbmlogoShdNoBkg.png" width=160></a>
+      </header>
+      <nav>
+          <div class="row">
+              <div class="colL">
+                  <h1><a href=/#Experience>
+                  Experience
+                  </a></h1>
+              </div>
+              <div class="colL">
+                  <h1><a href=/#Portfolio>
+                  Portfolio
+                  </a></h1>
+              </div>
+              <div class="colC"></div>
+              <div class="colR">
+                  <h1><a href=/#Contact>
+                  Contact
+                  </a></h1>
+              </div>
+              <div class="colR">
+                  <h1><a href=/#Active_Projects>
+                  Active Projects
+                  </a></h1>
+              </div>
+          </div>
+      </nav>
+    <div id="title">
+      <h1><a>
+          Wizards vs Robots
+      </a></h1>
+    </div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Wizards v Robots</div>
+      </div>
+    </div>
+    <div id="info">
+      <h2><a>
+          Controls
+      </a></h2>
+      <p>
+          Move with WASD<br>
+          Point the wand with your mouse, and click to shoot a spell<br><br><br>
+          ...that's it lol
+      </p>
+      <h2><a>
+          <br>More Info
+      </a></h2>
+      <p>
+          I started this Unity project at the start of 2021, and my goal is to have the final project finished and hopefully published by the end of the year.
+          This is my first full-fledged Unity game, and I've been having a lot of fun working on it.<br><br>
+          As this is a solo project, I've been making all of the graphics, code, sounds, rules, etc. by myself.
+          This has definitely slowed my progress, but it's been exciting to learn about all of the important aspects that go into a finished product.<br><br>
+          There is still much do before the game is finished. My end goal is a fast-paced online multiplayer game for people to make lobbies and play with their friends.
+      </p>
+      <h2><a>
+          <br>Updates
+      </a></h2>
+      <p>
+          <b>v0.1</b> (current): The first playable version. Player is able to move and cast (harmless) spells on a simple map that shows off the textures made for the game.
+      </p>
+    </div>
+  </body>
+</html>
