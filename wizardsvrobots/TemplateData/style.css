@@ -2,8 +2,8 @@
 @font-face {font-family: proximaNova-Regular;src: url(/fonts/proximaNova-Regular.otf);}
 @font-face {font-family: proximaNova-Semibold;src: url(/fonts/proximaNova-Semibold.ttf);}
 
-.webgl-content * {border: 0; margin: 0; padding: 0}
-.webgl-content {position: absolute; top: 68%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content * {border: 0; margin: 0; padding: 0; float: center;}
+.webgl-content {margin: auto; width: 960px; padding-bottom: 20px;}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
@@ -111,7 +111,9 @@ nav .colR {
 }
 
 #title {
-    position: absolute; top: 27%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+    /* position: absolute; top: 27%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); */
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 #title h1 {
@@ -123,7 +125,7 @@ nav .colR {
     color: black;
     border: 15px solid #577980;
     border-radius: 50px;
-    position: absolute; top: 162%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); padding-bottom: 50px;
+    margin: auto; width: 840px;
 }
 #info h2 {
     font-size: xx-large;

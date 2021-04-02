@@ -1,7 +1,7 @@
 {
 "companyName": "DefaultCompany",
 "productName": "Wizards v Robots",
-"productVersion": "0.1",
+"productVersion": "0.3",
 "dataUrl": "WvRHTML.data.unityweb",
 "wasmCodeUrl": "WvRHTML.wasm.code.unityweb",
 "wasmFrameworkUrl": "WvRHTML.wasm.framework.unityweb",
