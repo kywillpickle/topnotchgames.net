@@ -26,16 +26,45 @@ button {
     background: none;
 }
 header {
-    /* background-color: #95F1F6; */
-    background-image: url(/media/headerBkg.png);
-    background-size: 100% 140%;
-    background-position-y: -25px;
     color: #ffffff;
     padding-top: 1px;
     padding-bottom: 30px;
     margin: 0px;
     margin-bottom: -30px;
     text-align: center;
+}
+header:before {
+    /* background-color: #95F1F6; */
+    background-image: url(/media/headerBkg.png);
+    background-size: 1024px, 170px;
+    background-position: 0px, 50px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 170px;
+    background-repeat:repeat-x;
+    -webkit-animation: flow-right 45s linear infinite;
+    -moz-animation: flow-right 45s linear infinite;
+    animation: flow-right 45s linear infinite;
+}
+@keyframes flow-right {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1024px;
+    }
+}
+@-webkit-keyframes flow-right {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 0px;
+    }
 }
 header h1 {
     text-shadow: 1.5px 1.5px 2px black;

@@ -48,12 +48,40 @@ button {
     border: none;
     background: none;
 }
-
-header {
+header:before {
     /* background-color: #95F1F6; */
     background-image: url(/media/headerBkg.png);
-    background-size: 100% 140%;
-    background-position-y: -25px;
+    background-size: 1024px, 170px;
+    background-position: 0px, 50px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 169.133px;
+    background-repeat:repeat-x;
+    -webkit-animation: flow-right 45s linear infinite;
+    -moz-animation: flow-right 45s linear infinite;
+    animation: flow-right 45s linear infinite;
+}
+@keyframes flow-right {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1024px;
+    }
+}
+@-webkit-keyframes flow-right {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 0px;
+    }
+}
+header {
     color: #ffffff;
     padding-top: 1px;
     padding-bottom: 30px;
