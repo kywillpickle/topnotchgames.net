@@ -27,11 +27,10 @@ button {
 }
 header {
     color: #ffffff;
-    padding-top: 1px;
-    padding-bottom: 30px;
+    padding-top: 2px;
     margin: 0px;
-    margin-bottom: -30px;
     text-align: center;
+    height: 168px;
 }
 header:before {
     /* background-color: #95F1F6; */
@@ -39,9 +38,9 @@ header:before {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
-    background-size: 1024px, 170px;
+    background-size: 1024px, 168px;
     background-position: 0px, 50px;
-    z-index: -1;
+    z-index: -2;
     content: "";
     position: absolute;
     top: 0;
@@ -71,7 +70,6 @@ header:before {
 }
 header h1 {
     text-shadow: 1.5px 1.5px 2px black;
-    font-size: xx-large;
     text-align: center;
     padding: 0px;
     margin-bottom: 0px;
@@ -88,12 +86,17 @@ header h2 {
     margin-bottom: -90px;
 }
 nav {
-    height: 30px;
     background-color: #5a838fbb;
     color: #ffffff;
     text-shadow: 1px 1px 3px #2c2c2c;
     letter-spacing: 1px;
     text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 140px;
+    height: 30px;
+    z-index: -1;
 }
 nav div div {
     font-size: x-small;
