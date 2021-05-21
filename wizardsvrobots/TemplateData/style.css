@@ -63,7 +63,7 @@ header:before {
     -ms-interpolation-mode: nearest-neighbor;
     background-size: 1024px, 168px;
     background-position: 0px, 50px;
-    z-index: -2;
+    z-index: -1;
     content: "";
     position: absolute;
     top: 0;
@@ -107,6 +107,8 @@ header h2 {
 }
 .logoimg {
     margin-bottom: -90px;
+    z-index: 1;
+    position: relative;
 }
 nav {
     background-color: #5a838fbb;
@@ -119,7 +121,6 @@ nav {
     right: 0;
     top: 140px;
     height: 30px;
-    z-index: -1;
 }
 nav div div {
     font-size: x-small;
