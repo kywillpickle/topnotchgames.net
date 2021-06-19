@@ -149,11 +149,24 @@ section h1 {
     margin-right: 25%;
     padding-top: 30px;
 }
+section hr.seperator {
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
 section.dark h2 {
     text-shadow: 1px 1px 3px #2c2c2c;
+    font-size: xx-large;
 }
 section.light h2 {
     text-shadow: 0.5px 0.5px 1px #2c2c2c;
+    font-size: xx-large;
+}
+section div.item {
+    width: 100%;
+    grid-row: 2;
+    display: grid;
 }
 section p {
     margin: 0;
@@ -169,19 +182,16 @@ section .img img {
     box-shadow: 0.5px 0.5px 3px #2c2c2c;
 }
 section#Portfolio{
-    display: grid;
     align-content: center;
     grid-auto-flow: column;
 }
 section h1 {
     grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
 }
 section#Portfolio .colL {
     display: grid;
     align-content: center;
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 1;
     padding-left: 6%;
     padding-right: 2%;
@@ -191,7 +201,7 @@ section#Portfolio .colR {
     display: grid;
     align-content: center;
     grid-auto-flow: column;
-    grid-row: 2;
+    grid-row: 1;
     grid-column-start: 2;
     grid-column-end: 4;
     padding-top: 30px;
@@ -202,18 +212,25 @@ section#Portfolio .colR {
 section#Portfolio .img {
     float: left;
 }
-section#Active_Projects {
-    display: grid;
-}
 section#Active_Projects .colL {
     display: grid;
     align-content: center;
     grid-auto-flow: column;
-    grid-row: 2;
+    grid-row: 1;
     grid-column-start: 1;
     grid-column-end: 3;
     padding-top: 30px;
-    padding-left: 2%;
+    padding-left: 3%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+}
+section#Active_Projects .colL2 {
+    display: grid;
+    align-content: center;
+    grid-row: 1;
+    grid-column: 1;
+    padding-top: 30px;
+    padding-left: 6%;
     padding-right: 2%;
     padding-bottom: 3%;
 }
@@ -226,14 +243,30 @@ section#Active_Projects .colL div {
 section#Active_Projects .colR {
     display: grid;
     align-content: center;
-    grid-row: 2;
+    grid-row: 1;
     grid-column: 3;
     padding-left: 2%;
     padding-right: 6%;
     padding-bottom: 3%;
 }
+section#Active_Projects .colR2 {
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 30px;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
 section#Active_Projects .img {
     float: left;
+}
+section div.buttondiv {
+    grid-column: 1;
+    grid-row: 2;
 }
 section#Contact {
     display: grid;
