@@ -15,7 +15,7 @@
 .webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
 .webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
 
-.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.webgl-content .footer {color: white; margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
 .webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
@@ -25,7 +25,7 @@
     box-shadow: 1px 1px 5px #2c2c2c;
 }
 body {
-    background-color: #577980;
+    background-color: #2e2e2e;
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -57,11 +57,12 @@ header {
 }
 header:before {
     /* background-color: #95F1F6; */
-    background-image: url(/media/headerBkg.png);
+    background-image:  url(/media/headerBkg.png), url(/media/headerBkgBkg.png);
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
-    background-size: 1024px, 168px;
+    background-size: 1024px 168px,
+        1024px 168px;
     background-position: 0px, 50px;
     z-index: -1;
     content: "";
@@ -71,16 +72,16 @@ header:before {
     left: 0;
     height: 170px;
     background-repeat:repeat-x;
-    -webkit-animation: flow-right 40s linear infinite;
-    -moz-animation: flow-right 40s linear infinite;
-    animation: flow-right 40s linear infinite;
+    -webkit-animation: flow-right 160s linear infinite;
+    -moz-animation: flow-right 160s linear infinite;
+    animation: flow-right 160s linear infinite;
 }
 @keyframes flow-right {
     0% {
         background-position: 0;
     }
     100% {
-        background-position: 1024px;
+        background-position: 4096px, -1024px;
     }
 }
 @-webkit-keyframes flow-right {
@@ -88,7 +89,7 @@ header:before {
         background-position: 0;
     }
     100% {
-        background-position: 0px;
+        background-position: 4096px, -1024px;
     }
 }
 header h1 {
@@ -98,8 +99,9 @@ header h1 {
     margin-bottom: 0px;
 }
 header h2 {
-    color: black;
-    font-size: small;
+    color: white;
+    text-shadow: 1.5px 1.5px 1px black;
+    font-size: medium;
     text-align: center;
     padding: 0px;
     margin-top: 0px;
@@ -111,7 +113,7 @@ header h2 {
     position: relative;
 }
 nav {
-    background-color: #5a838fbb;
+    background-color: #2e2e2ebb;
     color: #ffffff;
     text-shadow: 1px 1px 3px #2c2c2c;
     letter-spacing: 1px;
@@ -156,11 +158,11 @@ nav .colR {
 }
 
 #info {
-    background-color: #8fc1ca;
+    background-color: #5e5e5e;
     color: black;
-    border: 15px solid #577980;
+    border: 15px solid #2e2e2e;
     border-radius: 50px;
-    margin: auto; width: 840px;
+    margin: auto; width: 70%;
 }
 #info h2 {
     font-size: xx-large;
@@ -168,6 +170,35 @@ nav .colR {
 }
 #info p {
     color: black;
+    font-size: large;
     margin-left: 4%;
     margin-right: 4%;
+}
+
+div.item {
+    width: 100%;
+    grid-row: 2;
+    display: grid;
+}
+
+div div div.colL {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    padding-left: 2%;
+}
+div div div.colL p {
+    line-height: 150%;
+}
+div div div.colR {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    padding-right: 2%;
+}
+div div div.colR p {
+    line-height: 200%;
+}
+div div div h2 {
+    margin-bottom: 0;
 }

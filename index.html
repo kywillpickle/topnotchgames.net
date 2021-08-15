@@ -16,6 +16,8 @@
         <meta name="twitter:description" content="The official website of Top Notch Games, a portfolio of my work as a Computer Science and Engineering major.">
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:image" content="https://www.topnotchgames.net/media/socialPreviewGH.png"/>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         <header>
@@ -59,7 +61,7 @@
             </a></h1>
             <p>
                 Hello!<br>
-                This is a website! (that I made from scratch!)<br>
+                This is my website! (that I made from scratch!)<br>
                 Thanks for visiting! Feel free to check out my projects.
             </p>
         </section>
@@ -206,4 +208,13 @@
                 </div>
         </section>
     </body>
+    <script>
+        var headr = document.querySelectorAll('section h1'); ScrollReveal().reveal(headr, {delay:300});
+        ScrollReveal().reveal('.item', {delay:300});
+        var contact = document.querySelectorAll('section#Contact div'); ScrollReveal().reveal(contact, {delay:300});
+        var introheadr = document.querySelector('section#Introduction h1'); ScrollReveal().reveal(introheadr, {delay:0});
+        var intro = document.querySelector('#Introduction'); ScrollReveal().reveal(intro, {delay:100});
+        var experheadr = document.querySelector('section#Experience h1'); ScrollReveal().reveal(experheadr, {delay:0});
+        var exper = document.querySelector('#Experience'); ScrollReveal().reveal(exper, {delay:200});
+    </script>
 </html>
