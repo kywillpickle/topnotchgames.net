@@ -25,7 +25,7 @@
     box-shadow: 1px 1px 5px #2c2c2c;
 }
 body {
-    background-color: #2e2e2e;
+    background-color: #282828;
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -37,7 +37,7 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: #eeeeee;
 }
 .row:after {
     content: "";
@@ -113,7 +113,7 @@ header h2 {
     position: relative;
 }
 nav {
-    background-color: #2e2e2ebb;
+    background-color: #282828bb;
     color: #ffffff;
     text-shadow: 1px 1px 3px #2c2c2c;
     letter-spacing: 1px;
@@ -158,9 +158,9 @@ nav .colR {
 }
 
 #info {
-    background-color: #5e5e5e;
+    background-color: #4e4e4e;
     color: black;
-    border: 15px solid #2e2e2e;
+    border: 15px solid #282828;
     border-radius: 50px;
     margin: auto; width: 70%;
 }
@@ -169,7 +169,7 @@ nav .colR {
     text-shadow: 1.5px 1.5px 2px black;
 }
 #info p {
-    color: black;
+    color: #eeeeee;
     font-size: large;
     margin-left: 4%;
     margin-right: 4%;

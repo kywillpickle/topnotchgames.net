@@ -31,23 +31,23 @@
             <nav>
                 <div class="row">
                     <div class="colL">
-                        <h1><a href=/#Experience>
+                        <h1><a href=#Experience>
                         Experience
                         </a></h1>
                     </div>
                     <div class="colL">
-                        <h1><a href=/#Portfolio>
+                        <h1><a href=#Portfolio>
                         Portfolio
                         </a></h1>
                     </div>
                     <div class="colC"></div>
                     <div class="colR">
-                        <h1><a href=/#Contact>
+                        <h1><a href=#Contact>
                         Contact
                         </a></h1>
                     </div>
                     <div class="colR">
-                        <h1><a href=/#Active_Projects>
+                        <h1><a href=#Active_Projects>
                         Active Projects
                         </a></h1>
                     </div>
@@ -208,8 +208,12 @@
                 </div>
         </section>
         <br><br>
+        <script src="./zenscroll.js"></script>
     </body>
     <script>
+        // Zenscroll Settings
+        zenscroll.setup(500, 0)
+        // Text Fade Effects from ScrollEffects
         var headr = document.querySelectorAll('section h1'); ScrollReveal().reveal(headr, {delay:300});
         ScrollReveal().reveal('.item', {delay:300});
         var contact = document.querySelectorAll('section#Contact div'); ScrollReveal().reveal(contact, {delay:300});
