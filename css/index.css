@@ -287,3 +287,50 @@ section#Contact h1 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+.githubButton {
+    background: linear-gradient(225deg, #944cce, #481898, #944cce);
+    background-size: 300% 300%;
+    border: 15px solid #282828;
+    border-radius: 50px;
+    transition: transform 0.2s; 
+}
+.light .githubButton {
+    border: 15px solid #4e4e4e;
+}
+.devpostButton {
+    background: linear-gradient(225deg, #5b79b4, #224054, #5b79b4);
+    background-size: 300% 300%;
+    border: 15px solid #282828;
+    border-radius: 50px;
+    transition: transform 0.2s; 
+}
+.light .devpostButton {
+    border: 15px solid #4e4e4e;
+}
+.playButton {
+    background: linear-gradient(225deg, #357eb9, #983db9, #357eb9);
+    background-size: 300% 300%;
+    border: 15px solid #282828;
+    border-radius: 50px;
+    transition: transform 0.2s; 
+}
+.light .playButton {
+    border: 15px solid #4e4e4e;
+}
+.githubButton:hover, .devpostButton:hover, .playButton:hover{ 
+    transform:scale(1.2);
+    cursor: pointer;
+}
+@-webkit-keyframes colorCycle {
+    0%{background-position:0% 50%}
+    100%{background-position:300% 50%}
+}
+@-moz-keyframes colorCycle {
+    0%{background-position:0% 50%}
+    100%{background-position:300% 50%}
+}
+@keyframes colorCycle {
+    0%{background-position:0% 50%}
+    100%{background-position:300% 50%}
+}
