@@ -18,6 +18,14 @@
         <meta name="twitter:image" content="https://www.topnotchgames.net/media/socialPreviewMeta.png"/>
 
         <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRTVLQ0XXZ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RRTVLQ0XXZ');
+        </script>
     </head>
     <body>
         <header>
@@ -92,13 +100,13 @@
                     </div>
                     <div>
                         <a href="https://github.com/kywillpickle/Arboretum-Gallerium" target="_blank"><button>
-                            <div class="githubButton" style="display:grid; height: 65px; width: 195px; align-items: center; justify-items: center; overflow: hidden;">
+                            <div class="button githubButton" style="display:inline-grid; height: 65px; width: 195px; align-items: center; justify-items: center; overflow: hidden;">
                                 <img style="grid-column: 1;" src="media/logoGH.png" width=60px>
                                 <span style="align-content: left; grid-column: 2; margin-top: 8px; font-family: retrograde, sans-serif; font-size: x-large; color: white;">Github</span>
                             </div>
                         </button></a>
                         <a href="https://devpost.com/software/arboretum-gallerium" target="_blank"><button>
-                            <div class="devpostButton" style="display:grid; height: 65px; width: 215px; align-items: center; justify-items: center; overflow: hidden;">
+                            <div class="button devpostButton" style="display:inline-grid; height: 65px; width: 215px; align-items: center; justify-items: center; overflow: hidden;">
                                 <img style="grid-column: 1;" src="media/logoDEV.png" width=60px>
                                 <span style="grid-column: 2; margin-top: 8px; font-family: retrograde, sans-serif; font-size: x-large; color: white;">Devpost</span>
                             </div>
@@ -159,7 +167,7 @@
                     </p>
                     </div>
                     <a href="/wizardsvrobots/"><button>
-                        <div class="playButton" style="display:grid; height: 65px; width: 195px; align-items: center; justify-items: center;">
+                        <div class="button playButton" style="overflow: hidden; display:inline-grid; height: 65px; width: 195px; align-items: center; justify-items: center;">
                             <img style="grid-column: 1;" src="media/logoPLAY.png" width=60px>
                             <span style="grid-column: 2; margin-top: 8px; font-family: retrograde, sans-serif; font-size: xx-large; color: white;">Play</span>
                         </div>
@@ -193,7 +201,7 @@
                     </p>
                     </div>
                     <a href="https://github.com/kywillpickle/FrogCraft" target="_blank"><button>
-                        <div class="githubButton" style="display:grid; height: 65px; width: 195px; align-items: center; justify-items: center; overflow: hidden;">
+                        <div class="githubButton" style="display:inline-grid; height: 65px; width: 195px; align-items: center; justify-items: center; overflow: hidden;">
                             <img style="grid-column: 1;" src="media/logoGH.png" width=60px>
                             <span style="grid-column: 2; margin-top: 8px; font-family: retrograde, sans-serif; font-size: x-large; color: white;">Github</span>
                         </div>
@@ -234,10 +242,10 @@
         console.log(butts);
         for(let i = 0; i < butts.length; i++) {
             butts[i].addEventListener("mouseover", function animateBkg() {
-                this.style = "display:grid; height: "+this.style.height+"; width: "+this.style.width+"; align-items: center; justify-items: center; -webkit-animation: colorCycle 3s linear infinite; -moz-animation: colorCycle 3s linear infinite; animation: colorCycle 3s linear infinite;";
+                this.style = "display:inline-grid; height: "+this.style.height+"; width: "+this.style.width+"; align-items: center; justify-items: center; -webkit-animation: colorCycle 3s linear infinite; -moz-animation: colorCycle 3s linear infinite; animation: colorCycle 3s linear infinite;";
             })
             butts[i].addEventListener("mouseout", function rmAnimation() {
-                this.style = "display:grid; height: "+this.style.height+"; width: "+this.style.width+"; align-items: center; justify-items: center;";
+                this.style = "display:inline-grid; height: "+this.style.height+"; width: "+this.style.width+"; align-items: center; justify-items: center;";
             })
         }
     </script>
