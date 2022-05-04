@@ -108,17 +108,17 @@ nav div div h1 {
     margin-top: 10px;
 
 }
-nav .colL {
+.navcolL {
     float: left;
     width: 22%;
     text-align: right;
     white-space: nowrap;
 }
-nav .colC {
+.navcolC {
     float: none;
     width: 12%;
 }
-nav .colR {
+.navcolR {
     float: right;
     width: 22%;
     text-align: left;
@@ -199,31 +199,10 @@ section#Portfolio{
 section h1 {
     grid-row: 1;
 }
-section#Portfolio .colL {
-    display: grid;
-    align-content: center;
-    grid-row: 1;
-    grid-column: 1;
-    padding-left: 6%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-}
-section#Portfolio .colR {
-    display: grid;
-    align-content: center;
-    grid-auto-flow: column;
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    padding-top: 30px;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 3%;
-}
 section#Portfolio .img {
     float: left;
 }
-section#Active_Projects .colL {
+.colL {
     display: grid;
     align-content: center;
     grid-auto-flow: column;
@@ -235,7 +214,7 @@ section#Active_Projects .colL {
     padding-right: 2%;
     padding-bottom: 3%;
 }
-section#Active_Projects .colL2 {
+.colL2 {
     display: grid;
     align-content: center;
     grid-row: 1;
@@ -251,7 +230,7 @@ section#Active_Projects .colL div {
     padding-top: 6px;
     padding-bottom: 6px;
 }
-section#Active_Projects .colR {
+.colR {
     display: grid;
     align-content: center;
     grid-row: 1;
@@ -260,7 +239,7 @@ section#Active_Projects .colR {
     padding-right: 6%;
     padding-bottom: 3%;
 }
-section#Active_Projects .colR2 {
+.colR2 {
     display: grid;
     align-content: center;
     grid-auto-flow: column;
