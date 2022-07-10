@@ -1,0 +1,38 @@
+@import url("/css/index.css");
+
+header:before {
+    /* background-color: #95F1F6; */
+    background-image:  url(/media/minecraft/headerBkg.png), url(/media/minecraft/headerBkgBkg.png);
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    background-size: 896px 168px,
+        1792px 168px;
+    background-position: 0px, 50px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 170px;
+    background-repeat:repeat-x;
+    -webkit-animation: flow-right 160s linear infinite;
+    -moz-animation: flow-right 160s linear infinite;
+    animation: flow-right 160s linear infinite;
+}
+
+body {
+    background-color: #3b4f6e;
+}
+nav {
+    background-color: #3b4f6ebb;
+}
+.dark {
+    background-color: #3b4f6e;
+    border: 15px solid #3b4f6e;
+}
+.light {
+    background-color: #5b759d;
+    border: 15px solid #5b759d;
+}

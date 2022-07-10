@@ -38,8 +38,8 @@ header:before {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
-    background-size: 1024px 168px,
-        1024px 168px;
+    background-size: 896px 168px,
+        896px 168px;
     background-position: 0px, 50px;
     z-index: -1;
     content: "";
